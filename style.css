@@ -14,21 +14,31 @@ header, nav, section, aside, footer {
 }
 
 header, nav, footer {
-    padding: 16px;
+    padding: 30px 0 30px 0;
 }
 
+header {
+    margin: 0 0 16px 0;
+}
 section {
-    display: inline-block;
-    margin: 16px;
-    padding: 16px;
-    overflow: hidden;
+    float: left;
+    margin: 20px 16px 16px 0;
+    padding: 30px 0 0 0;
+    width: 495px;
 }
 
 aside {
-    display: inline-block;
-    margin: 16px;
-    padding: 150px;
-    overflow: hidden;
+    float: left;
+    margin: 20px 0 16px 0px;
+    padding: 30px 0 0 0;
+    width: 449px;
+    height: 263px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 article {
@@ -43,8 +53,4 @@ h1, p {
    background: #ebebeb;
    padding: 16px;
    margin: 16px;
-}
-
-section {
-    width: 495px;
 }
